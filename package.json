@@ -33,6 +33,7 @@
     "gatsby-optional-chaining": "^1.0.1",
     "gatsby-plugin-emotion": "^4.3.10",
     "gatsby-plugin-manifest": "^2.4.33",
+    "gatsby-plugin-offline": "^3.2.30",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-source-dev": "^0.1.4",
     "gatsby-source-graphql": "^2.7.5",
