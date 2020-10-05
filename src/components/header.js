@@ -1,15 +1,12 @@
 import React, { createRef, useEffect, useState } from "react"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
 import it from "param.macro"
 import useVisbilityPercentage from "use-visibility-percentage"
 import { Logo, Wave } from "./svg"
-import { Padding } from "./padding"
-import { LeonText, LeonWord } from "./leon-text"
+import { LeonText } from "./leon-text"
 import { NavBar } from "./nav-bar"
-import { Button, RoundButton } from "../components/buttons"
-import { Link } from "gatsby"
-import { Hamburger } from "./hamburger"
+import { Button } from "../components/buttons"
+import { Link } from "./link"
 import { aboutRef, projectsRef, contactRef } from "../pages/index"
 
 const StyledHeader = styled.header`
@@ -74,7 +71,7 @@ const LogoLink = styled(Link)`
 
 export const Header = ({
   left = (
-    <LogoLink to="/">
+    <LogoLink to="/" label="home">
       <Logo />
     </LogoLink>
   ),

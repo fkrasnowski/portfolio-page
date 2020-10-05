@@ -132,7 +132,14 @@ const Layout = ({ children }) => (
   <>
     <Helmet>
       <title>Krasnowski</title>
+      <html lang="en" />
       <link rel="icon" href="/kr.ico" />
+      <link rel="apple-touch-icon" href="/kr-icon-apple.png"></link>
+      <meta name="theme-color" content={theme.colors.primary} />
+      <meta
+        name="description"
+        content="A portfolio page and blog of Franciszek Krasnowski"
+      />
     </Helmet>
     <ThemeProvider theme={theme}>
       <Global styles={globalStyles} />
