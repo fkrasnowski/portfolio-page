@@ -3,11 +3,17 @@ import { Link as GatsbyLink } from "gatsby"
 import useScrollTo from "use-scroll-to"
 
 export const Link = props => {
-  const { to, external, newTab, currentPage, scrollTo, onClick } = props
+  const { to, external, newTab, currentPage, scrollTo, onClick, label } = props
   const scroll = useScrollTo(scrollTo, { minus: 90 })
 
   return external ? (
-    <a {...props} href={to} target={newTab ? "_blank" : "_self"} />
+    <a
+      {...props}
+      href={to}
+      target={newTab ? "_blank" : "_self"}
+      rel="noopener"
+      aria-label={label}
+    />
   ) : (
     <a
       href={to}

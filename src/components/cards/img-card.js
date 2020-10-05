@@ -27,12 +27,12 @@ const CardContainer = styled.div`
   padding: ${it.theme.padding[0]};
 `
 
-export const ImgCard = ({ children }) => {
+export const ImgCard = ({ children, alt, img }) => {
   const { width } = useWindowSize()
   return (
     <CardContainer>
       {width >= 1200 && (
-        <CardLayout img="/me.jpg">
+        <CardLayout img={img} alt={alt}>
           <TextCard>{children}</TextCard>
         </CardLayout>
       )}

@@ -10,6 +10,8 @@ import {
   whileMouseHover,
   getStyle,
   afterMouseHover,
+  whileTap,
+  afterTap,
 } from "styled-benefits"
 import { Link } from "../link"
 
@@ -52,14 +54,14 @@ const CardFill = interactive(styled.a`
     margin-left: 1.3rem;
     transition: 0.5s transform;
   }
-  ${whileMouseHover} {
+  ${whileMouseHover}, ${whileTap} {
     color: ${it.theme?.colors.primaryText};
     transform: scale(0.98);
     #cardDecoration {
       animation: ${decorationAnimation} 0.5s forwards;
     }
   }
-  ${afterMouseHover(0.3)} {
+  ${afterMouseHover(0.3)}, ${afterTap(0.3)} {
     #cardDecoration {
       animation: ${rAnimation} 0.3s forwards reverse;
     }
