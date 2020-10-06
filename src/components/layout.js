@@ -21,8 +21,8 @@ const globalStyles = theme => css`
     box-sizing: border-box;
     margin: 0;
     /* transition: all 0.2s; */
-    line-height: 200%;
     padding: 0;
+    line-height: 200%;
   }
   a:link {
     text-decoration: none !important;
@@ -40,12 +40,8 @@ const globalStyles = theme => css`
 
     h3 {
       font-size: 1.4rem;
-      line-height: 200%;
     }
-    h2 {
-      font-size: 2rem;
-      line-height: 200%;
-    }
+
     h1 {
       font-size: 4rem;
       @media (max-width: 800px) {
@@ -65,6 +61,7 @@ const globalStyles = theme => css`
       }
       @media (max-width: 720px) {
         padding: 0 1rem;
+        font-size: 15px;
       }
     }
     article {
@@ -72,7 +69,7 @@ const globalStyles = theme => css`
       h2 {
         text-align: left;
         color: ${theme.colors.extras[0]}; /*yellowgreen*/
-        line-height: 300%;
+        padding: 1rem 0px;
       }
       h3 {
         color: ${theme.colors.extras[1]};
@@ -90,6 +87,10 @@ const globalStyles = theme => css`
       background: ${theme.colors.primary};
       color: #ffcf00;
       overflow-x: scroll;
+      @media (max-width: 500px) {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+      }
       border-radius: ${theme.corner[1]};
       padding: ${theme.padding[1]};
       ::-webkit-scrollbar {

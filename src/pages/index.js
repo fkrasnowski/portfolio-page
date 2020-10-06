@@ -33,7 +33,7 @@ export default function Home({ data }) {
           <PinnedCards data={data} />
           <Padding h="4rem" />
           <h2 ref={aboutRef}>That's me</h2>
-          <ImgCard img="/me.jpg" alt="Man on the bench">
+          <ImgCard img="/me.jpg">
             I'm an extravert 😎. I like meeting new people as well as discover
             new places, especially if there's good beer 🍻. Picking and brewing
             herbs makes me mellow 🌿.
