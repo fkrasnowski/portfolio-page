@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
   padding-top: 8rem;
   font-size: 2.5rem;
   @media (max-width: 800px){
-font-size: 2rem;
+    font-size: 2rem;
   }
   z-index:3;
 `
@@ -31,6 +31,7 @@ const HeaderContent = styled.div`
   align-items: center;
   text-align: center;
   z-index: 3;
+  margin: -1rem 0px;
 `
 
 const NavBarRightSection = ({ currentPage, closeMenu }) => [

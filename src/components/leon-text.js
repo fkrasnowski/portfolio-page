@@ -33,6 +33,7 @@ export const LeonWord = ({ children, weight, drawValue }) => {
 
     canvas.width = sw * pixelRatio
     canvas.height = sh * pixelRatio
+    canvas.style.margin = size - 65 + "px 0px"
     canvas.style.width = sw + "px"
     canvas.style.height = sh + "px"
     // canvas.style.background = "pink"
