@@ -15,16 +15,8 @@ export const Link = props => {
       aria-label={label}
     />
   ) : (
-    <a
-      href={to}
-      onClick={e => {
-        e.preventDefault()
-        if (onClick) onClick(e)
-        if (to === currentPage) scroll()
-        else setTimeout(scroll, 100)
-      }}
-    >
+    <div>
       <GatsbyLink {...props} to={to !== currentPage ? to : null} />
-    </a>
+    </div>
   )
 }
