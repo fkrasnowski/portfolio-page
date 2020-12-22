@@ -1,4 +1,4 @@
-import React, { createRef } from "react"
+import React, { createRef, useEffect } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { PinnedCards } from "../components/pinned-cards"
@@ -8,13 +8,16 @@ import { Padding } from "../components/padding"
 import { ImgCard } from "../components/cards"
 import { GitHubIcon, LinkedInIcon, MailIcon } from "../components/svg"
 import { Flex } from "../components/flex"
+import smoothscroll from "smoothscroll-polyfill"
 
 export const projectsRef = createRef()
 export const aboutRef = createRef()
 export const contactRef = createRef()
 
 export default function Home({ data }) {
-  console.log(data)
+  useEffect(() => {
+    smoothscroll.polyfill()
+  }, [])
 
   return (
     <>

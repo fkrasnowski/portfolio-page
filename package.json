@@ -24,6 +24,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "remarkable": "^2.0.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "styled-benefits": "^0.1.2",
     "use-scroll-to": "^0.6.0",
     "use-visibility-percentage": "^0.4.7"
