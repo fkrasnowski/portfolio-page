@@ -5,7 +5,6 @@ import { PinnedCards } from "../components/pinned-cards"
 import { Header } from "../components/header"
 import { RoundButton } from "../components/buttons"
 import { Padding } from "../components/padding"
-import { Helmet } from "react-helmet"
 import { ImgCard } from "../components/cards"
 import { GitHubIcon, LinkedInIcon, MailIcon } from "../components/svg"
 import { Flex } from "../components/flex"
@@ -34,9 +33,9 @@ export default function Home({ data }) {
           <Padding h="4rem" />
           <h2 ref={aboutRef}>That's me</h2>
           <ImgCard img="/me.jpg">
-            I'm an extravert 😎. I like meeting new people as well as discover
-            new places, especially if there's good beer 🍻. Picking and brewing
-            herbs makes me mellow 🌿.
+            Big fan of the functional programming style - I know how to write
+            "hello world" in C 💪. I'm looking for a good beer 🍻. Picking and
+            brewing herbs makes me mellow 🌿.
           </ImgCard>
           <Padding h="4rem" />
           <h2 ref={contactRef}>Contact me</h2>

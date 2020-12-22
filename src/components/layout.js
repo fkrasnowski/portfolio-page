@@ -83,6 +83,10 @@ const globalStyles = theme => css`
       width: 100%;
       border-radius: ${theme.corner[0]};
     }
+    a > img {
+      height: 4vw;
+      width: auto;
+    }
     code {
       background: ${theme.colors.primary};
       color: #ffcf00;
