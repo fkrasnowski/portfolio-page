@@ -1,5 +1,6 @@
 {
     "redirects": [
+        { "source": "/", "destination": "https://krasnowski.dev" },
         { "source": "/:slug*", "destination": "https://krasnowski.dev/:slug*" }
     ]
 }
